@@ -5,6 +5,9 @@ import androidx.databinding.Bindable;
 
 public class AppViewModel extends BaseObservable {
 
+    // The Data Binding Library generates a class named BR in the module package
+    // which contains the IDs of the resources used for data binding.
+
     // creating object of Model class
     private Model model;
 
