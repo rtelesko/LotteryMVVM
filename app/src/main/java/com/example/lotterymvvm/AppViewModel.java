@@ -49,13 +49,13 @@ public class AppViewModel extends BaseObservable {
 
     // getter and setter methods for password variable
     @Bindable
-    public String getUserPassword() {
+    public String getPassword() {
         return model.getPassword();
     }
 
-    public void setUserPassword(String password) {
+    public void setPassword(String password) {
         model.setPassword(password);
-        notifyPropertyChanged(BR.userPassword);
+        notifyPropertyChanged(BR.password);
     }
 
     // actions to be performed when user clicks the LOGIN button
@@ -68,6 +68,6 @@ public class AppViewModel extends BaseObservable {
 
     // check for validity
     public boolean isValid() {
-        return getUsername().length() >= 5 && getUserPassword().equals("admin");
+        return getUsername().length() >= 5 && getPassword().equals("admin");
     }
 }
